@@ -7,8 +7,8 @@
     margin: 0;
     padding: 0;
     background: #20002c;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #cbb4d4, #20002c);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #cbb4d4, #20002c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to top, #cbb4d4, #20002c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #cbb4d4, #20002c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 .card{
@@ -26,17 +26,21 @@ background: linear-gradient(to top, #cbb4d4, #20002c); /* W3C, IE 10+/ Edge, Fir
     border-radius: 10px;
     margin: 30px;
     transition: 0.3s;
+    box-shadow: 5px 5px 10px white;
 }
 .nameActor{
+    text-transform: uppercase;
     text-align: center;
-    font-size: 25px;
+    font-size: 24px;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 .cardActor img{
     width: 100%;
     border-radius: 10px;
 }
 .cardActor:hover{
+    box-shadow: 15px 15px 10px white;
     transform: scale(1.1);
     transition: 0.3s;
 }
@@ -53,6 +57,7 @@ background: linear-gradient(to top, #cbb4d4, #20002c); /* W3C, IE 10+/ Edge, Fir
     height: 60vh;
     background-image: url('https://i.pinimg.com/originals/78/5f/ae/785faecb648be826e5a05bd85fce125d.jpg');
     background-size: cover;
+    background-position: unset;
     display: grid;
     place-content: center;
 }

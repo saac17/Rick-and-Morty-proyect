@@ -6,7 +6,7 @@ const NavBar = ({handleSubmit}) => {
         <h1 className='title'>Rick and Morty</h1>
         <form onSubmit={handleSubmit}>
             <input id='search' type="text" className='inputSearch'/>
-            <button className='buttonSearch'><i class='bx bx-tada-hover bx-border bx-search-alt'></i></button>
+            <button className='buttonSearch'><i className='bx bx-tada-hover bx-border bx-search-alt'></i></button>
         </form>
     </div>
   )
