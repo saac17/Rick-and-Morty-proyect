@@ -3,6 +3,7 @@ import {useEffect, useState} from 'react'
 import axios from 'axios'
 import CardActor from './components/CardActor'
 import NavBar from './components/NavBar'
+import Loading from './components/Loading'
 
 function App() {
   const [character, setCharacter] = useState()
@@ -30,20 +31,26 @@ function App() {
 
   return (
     <div className="App" >
-      <NavBar
-        handleSubmit={handleSubmit} 
-      />
-      <div className='card'>
-        {
-        character?.results.map(actor => (
-          <CardActor 
-            key={`${actor.created}`}
-            actor={actor}
-          />
-          ))
-        }
-      </div>
-         
+      {
+        character ?
+          <div>
+            <NavBar
+              handleSubmit={handleSubmit} 
+            />
+            <div className='card'>
+            {
+              character?.results.map(actor => (
+                <CardActor 
+                  key={`${actor.created}`}
+                  actor={actor}
+                />
+              ))
+            }
+            </div>
+          </div>
+        :
+          <Loading/>
+      }
     </div>
   )
 }
