@@ -13,6 +13,8 @@
     background: linear-gradient(to top, #cbb4d4, #20002c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .card{
+    margin: 0;
+    padding: 0;
     width: 100%;
     display: grid;
     place-content: center;
